@@ -1,4 +1,4 @@
-import FlexExample from './components/FlexExample';
+import FlexExample from './components/FlexDirectionExample';
 
 export default function App() {
   return <FlexExample />;
