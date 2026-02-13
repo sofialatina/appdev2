@@ -1,4 +1,4 @@
-import StyleExample from 'D:/Latte/GIthub/appdev2/react-native-ui-n-interaction/components/FlexDimensions';
+import StyleExample from 'D:/Latte/GIthub/appdev2/react-native-ui-n-interaction/components/PercentageDimensions';
 
 export default function App() {
   return <StyleExample />;
