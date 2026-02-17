@@ -1,4 +1,4 @@
-import FlexExample from './components/AlignItemsExample';
+import FlexExample from './components/AlignSelf';
 
 export default function App() {
   return <FlexExample />;
