@@ -98,3 +98,18 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 60,
     padding: 30,
   },
+
+
+  label: {
+    fontSize: 14,
+    color: "#666",
+    marginBottom: 5,
+    marginTop: 15,
+  },
+
+  input: {
+    backgroundColor: "#F0F0F0",
+    padding: 15,
+    borderRadius: 15,
+    fontSize: 16,
+  },
