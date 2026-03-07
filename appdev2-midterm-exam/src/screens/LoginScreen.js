@@ -139,7 +139,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: "bold",
   },
-  
+
     socialRow: {
     flexDirection: "row",
     justifyContent: "center",
@@ -151,3 +151,16 @@ const styles = StyleSheet.create({
     padding: 15,
     borderRadius: 15,
   },
+  
+  footer: {
+    flexDirection: "row",
+    justifyContent: "center",
+    marginTop: 30,
+  },
+
+  linkText: {
+    color: "#FFCC00",
+    fontWeight: "bold",
+  },
+
+});
