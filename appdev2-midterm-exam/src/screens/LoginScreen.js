@@ -14,7 +14,7 @@ export default function LoginScreen() {
       {/* Header Section */}
       <View style={styles.header}>
         <Image
-          source={require("D:/Latte/GIthub/appdev2/appdev2-midt-example/assets/Login.webp")}
+          source={require("D:/Latte/GIthub/appdev2/appdev2-midterm-exam/assets/Login.webp")}
           style={styles.image}
         />
       </View>
