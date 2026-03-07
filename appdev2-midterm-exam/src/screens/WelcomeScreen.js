@@ -11,8 +11,8 @@ export default function WelcomeScreen() {
       {/* 2. Middle Section */}
       <View style={styles.middleSection}>
         <Image
-          source={require("D:/Latte/GIthub/appdev2-midterm-exam/assets/Welcome.png")}
-          style={styles.image}
+          source={require("D:/Latte/GIthub/appdev2/appdev2-midterm-exam/assets/Welcome.png")}
+          style={styles.image} 
         />
       </View>
 

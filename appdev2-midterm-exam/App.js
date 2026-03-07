@@ -1,5 +1,5 @@
-import SignupScreen from "./src/screens/SignupScreen";
+import TodoScreen from "./src/screens/TodoScreen";
 
 export default function App() {
-  return <SignupScreen />;
+  return <TodoScreen />;
 }
