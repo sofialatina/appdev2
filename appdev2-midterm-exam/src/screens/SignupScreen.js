@@ -49,10 +49,6 @@ export default function SignupScreen() {
           <Text style={styles.loginButtonText}>Sign Up</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity>
-          <Text style={styles.forgotText}>Forgot Password?</Text>
-        </TouchableOpacity>
-
         <TouchableOpacity style={styles.loginButton}>
           <Text style={styles.loginButtonText}>Login</Text>
         </TouchableOpacity>
