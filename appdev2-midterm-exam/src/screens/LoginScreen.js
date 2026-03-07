@@ -19,42 +19,50 @@ export default function LoginScreen() {
         />
       </View>
 
-      {/* 2. Form Section */}
+{/* Form Section */}
       <View style={styles.formContainer}>
-        <Text style={styles.label}></Text>
-        <TextInput style={styles.input} placeholder="" />
 
-        <Text style={styles.label}></Text>
-        <TextInput style={styles.input} secureTextEntry placeholder="" />
+        <Text style={styles.label}>Email Address</Text>
+        <TextInput
+          style={styles.input}
+          placeholder="john@gmail.com"
+        />
+
+        <Text style={styles.label}>Password</Text>
+        <TextInput
+          style={styles.input}
+          placeholder="********"
+          secureTextEntry
+        />
 
         <TouchableOpacity>
-          <Text style={styles.forgotText}></Text>
+          <Text style={styles.forgotText}>Forgot Password?</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.loginButton}>
-          <Text style={styles.loginButtonText}></Text>
+          <Text style={styles.loginButtonText}>Login</Text>
         </TouchableOpacity>
 
-        <Text style={styles.orText}></Text>
+        <Text style={styles.orText}>Or</Text>
 
         <View style={styles.socialRow}>
           <TouchableOpacity style={styles.socialIcon}>
-            <Ionicons name="" size={30} color="#DB4437" />
+            <Ionicons name="logo-google" size={30} color="#DB4437" />
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.socialIcon}>
-            <Ionicons name="" size={30} color="black" />
+            <Ionicons name="logo-apple" size={30} color="black" />
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.socialIcon}>
-            <Ionicons name="" size={30} color="#4267B2" />
+            <Ionicons name="logo-facebook" size={30} color="#4267B2" />
           </TouchableOpacity>
         </View>
 
         <View style={styles.footer}>
-          <Text></Text>
+          <Text>Don't have an account? </Text>
           <TouchableOpacity>
-            <Text style={styles.linkText}></Text>
+            <Text style={styles.linkText}>Sign Up</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -81,4 +89,12 @@ const styles = StyleSheet.create({
     width: "80%",
     height: "70%",
     resizeMode: "contain",
+  },
+  
+  formContainer: {
+    flex: 2,
+    backgroundColor: "#FFF",
+    borderTopLeftRadius: 60,
+    borderTopRightRadius: 60,
+    padding: 30,
   },
