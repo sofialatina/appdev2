@@ -11,7 +11,7 @@ export default function WelcomeScreen() {
       {/* 2. Middle Section */}
       <View style={styles.middleSection}>
         <Image
-          source={require("./../../assets/welcome.png")}
+          source={require("D:/Latte/GIthub/appdev2/appdev2-midt-example/assets/Welcome.png")}
           style={styles.image}
         />
       </View>
@@ -24,7 +24,7 @@ export default function WelcomeScreen() {
         </TouchableOpacity>
 
         <View style={styles.loginContainer}>
-          <Text style={styles.footerText}>Already have an account? </Text>
+          <Text style={styles.footerText}>Already have an account?</Text>
           <TouchableOpacity>
             <Text style={styles.loginLink}>Log In</Text>
           </TouchableOpacity>
@@ -90,3 +90,19 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: "black",
   },
+
+  loginContainer: {
+    flexDirection: "row",
+  },
+
+  footerText: {
+    color: "#fff",
+  },
+
+  loginLink: {
+    color: "#FFCC00",
+    fontWeight: "bold",
+    fontSize: 15,
+  },
+
+});
