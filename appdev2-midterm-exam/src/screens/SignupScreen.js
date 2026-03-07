@@ -70,9 +70,9 @@ export default function SignupScreen() {
         </View>
 
         <View style={styles.footer}>
-          <Text>Don't have an account? </Text>
+          <Text>Already have an account? </Text>
           <TouchableOpacity>
-            <Text style={styles.linkText}>Sign Up</Text>
+            <Text style={styles.linkText}>Log In</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -154,7 +154,7 @@ const styles = StyleSheet.create({
     padding: 15,
     borderRadius: 15,
   },
-  
+
   footer: {
     flexDirection: "row",
     justifyContent: "center",
