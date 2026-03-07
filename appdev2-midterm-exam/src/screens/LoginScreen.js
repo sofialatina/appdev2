@@ -11,10 +11,10 @@ import Ionicons from "@react-native-vector-icons/ionicons";
 export default function LoginScreen() {
   return (
     <View style={styles.container}>
-      {/* 1. Header Section */}
+      {/* Header Section */}
       <View style={styles.header}>
         <Image
-          source={require("./../../assets/login.webp")}
+          source={require("D:/Latte/GIthub/appdev2/appdev2-midt-example/assets/Login.webp")}
           style={styles.image}
         />
       </View>
@@ -68,4 +68,17 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#7D7AFF",
     paddingTop: 40,
+  },
+
+  
+  header: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  image: {
+    width: "80%",
+    height: "70%",
+    resizeMode: "contain",
   },
