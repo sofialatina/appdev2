@@ -109,7 +109,6 @@ const styles = StyleSheet.create({
     padding: 30,
   },
 
-
   label: {
     fontSize: 14,
     color: "#666",
@@ -124,13 +123,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
 
-    forgotText: {
-    textAlign: "right",
-    marginTop: 10,
-    color: "#666",
-  },
-
-    loginButton: {
+  loginButton: {
     backgroundColor: "#FFCC00",
     padding: 18,
     borderRadius: 15,
@@ -143,7 +136,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
   },
 
-    orText: {
+  orText: {
     textAlign: "center",
     marginVertical: 20,
     fontSize: 18,
