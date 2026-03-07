@@ -18,16 +18,18 @@ export default function WelcomeScreen() {
 
       {/* 3. Bottom Section */}
       <View style={styles.bottomSection}>
+        
         <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}></Text>
+          <Text style={styles.buttonText}>Sign Up</Text>
         </TouchableOpacity>
 
         <View style={styles.loginContainer}>
-          <Text style={styles.footerText}></Text>
+          <Text style={styles.footerText}>Already have an account? </Text>
           <TouchableOpacity>
-            <Text style={styles.loginLink}></Text>
+            <Text style={styles.loginLink}>Log In</Text>
           </TouchableOpacity>
         </View>
+
       </View>
     </View>
   );
@@ -74,3 +76,17 @@ const styles = StyleSheet.create({
     paddingBottom: 40,
   },
   
+  button: {
+    backgroundColor: "#FFCC00",
+    width: "100%",
+    paddingVertical: 18,
+    borderRadius: 15,
+    alignItems: "center",
+    marginBottom: 20,
+  },
+
+  buttonText: {
+    fontWeight: "bold",
+    fontSize: 18,
+    color: "black",
+  },
