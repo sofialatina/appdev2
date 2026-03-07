@@ -54,3 +54,15 @@ const styles = StyleSheet.create({
     color: "#fff",
     textAlign: "center",
   },
+  
+  middleSection: {
+    flex: 3,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  image: {
+    width: "100%",
+    height: "100%",
+    resizeMode: "contain",
+  },
