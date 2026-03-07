@@ -19,21 +19,35 @@ export default function SignupScreen() {
         />
       </View>
 
-{/* Form Section */}
+      {/* Form Section */}
       <View style={styles.formContainer}>
 
+        {/* Full Name */}
+        <Text style={styles.label}>Full Name</Text>
+        <TextInput
+          style={styles.input}
+          placeholder="John Doe"
+        />
+
+        {/* Email */}
         <Text style={styles.label}>Email Address</Text>
         <TextInput
           style={styles.input}
           placeholder="john@gmail.com"
         />
 
+        {/* Password */}
         <Text style={styles.label}>Password</Text>
         <TextInput
           style={styles.input}
           placeholder="********"
           secureTextEntry
         />
+
+        {/* Sign Up Button */}
+        <TouchableOpacity style={styles.loginButton}>
+          <Text style={styles.loginButtonText}>Sign Up</Text>
+        </TouchableOpacity>
 
         <TouchableOpacity>
           <Text style={styles.forgotText}>Forgot Password?</Text>
