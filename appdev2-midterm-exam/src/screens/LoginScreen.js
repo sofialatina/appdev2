@@ -139,3 +139,15 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: "bold",
   },
+  
+    socialRow: {
+    flexDirection: "row",
+    justifyContent: "center",
+    gap: 20,
+  },
+
+  socialIcon: {
+    backgroundColor: "#F0F0F0",
+    padding: 15,
+    borderRadius: 15,
+  },
