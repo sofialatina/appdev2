@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { View, Text, TextInput, StyleSheet, TouchableOpacity, Alert } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
-export default function Signup({ switchScreen }) {
+export default function Signup({ switchScreen, onSignup }) {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -14,6 +14,7 @@ export default function Signup({ switchScreen }) {
         }
 
         Alert.alert("Success", "Account created successfully!");
+        onSignup();
     };
 
     return (
