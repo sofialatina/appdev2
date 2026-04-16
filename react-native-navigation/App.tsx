@@ -30,6 +30,11 @@ function DetailsScreen({ route }) {
       <Text>Details Screen</Text>
       <Text>Item ID: {itemId}</Text>
       <Text>Other Param: {otherParam}</Text>
+      <Button onPress={() => navigation.setParams({
+          itemId: Math.floor(Math.random() * 100),
+      })}>
+        Update Item ID
+      </Button>
       <Button onPress={() => navigation.push('Details', {
               itemId: Math.floor(Math.random() * 100),
             })
