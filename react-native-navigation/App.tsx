@@ -5,15 +5,22 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Link } from '@react-navigation/native';
 import { Button } from '@react-navigation/elements';
 
-function HomeScreen() {
+function HomeScreen({route}) {
   const navigation = useNavigation();
+  React.useEffect(() => {
+    if (route.params?.post) {
+      // Post updated, do something with `route.params.post`
+      // For example, send the post to the server
+    }
+      alert('New post: ' + route.params?.post);
+  }, [route.params?.post]);
 
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text>Home Screen</Text>
       <Button onPress={() => navigation.navigate('Details', {
         itemId: 86, 
-        otherParam: 'anything you want here'
+        otherParam: 'nxx investigation team'
         })}>
         Go to Details
       </Button>
@@ -24,6 +31,7 @@ function HomeScreen() {
 function DetailsScreen({ route }) {
   const navigation = useNavigation();
   const { itemId, otherParam } = route.params;
+  const [postText, setPostText] = React.useState('');
 
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -44,6 +52,11 @@ function DetailsScreen({ route }) {
       </Button>
       <Button onPress={() => navigation.goBack()}>
         Go back
+      </Button>
+      <Button onPress={() => {
+        navigation.popTo('Home', { post: postText });
+      }}>
+        Fin
       </Button>
     </View>
   );
