@@ -2,6 +2,7 @@ import * as React from 'react';
 import { View, Text } from 'react-native';
 import { createStaticNavigation } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { Background } from '@react-navigation/elements';
 
 function HomeScreen() {
   return (
@@ -21,11 +22,19 @@ function DetailsScreen() {
 
 const RootStack = createNativeStackNavigator({
   initialRouteName: 'Home',
+  initialRouteName: 'Home',
+  screenOptions: {
+    headerStyle: { backgroundColor: 'lemonchiffon' },
+  },
   screens: {
-    Home: HomeScreen,
-    Details: DetailsScreen,
+    Home: { 
+      screen: HomeScreen,
+      options: { title: 'overview' }
+    },
+    Details: { screen: DetailsScreen },
   },
 });
+
 const Navigation = createStaticNavigation(RootStack);
 export default function App() {
   return <Navigation />;
